@@ -40,8 +40,6 @@ ValidadorDeSenhas_VA01/
 ├── .coverage # Relatório de cobertura de testes
 └── README.md
 
-bash
-Copiar código
 
 ## Como Executar a Aplicação
 
