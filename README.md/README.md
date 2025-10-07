@@ -61,3 +61,8 @@ pip install pytest
 2. Execute os testes:
 python -m pytest testes --cov=src --cov-report=term-missing -v
 
+## Retorno dos testes executados
+
+<img width="1549" height="901" alt="image" src="https://github.com/user-attachments/assets/44ad60ca-7801-4f97-94a4-ec70790d198c" />
+
+
