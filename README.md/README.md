@@ -27,21 +27,39 @@ A função validar_senha(senha: str) segue as seguintes regras de segurança:
 - Não pode conter espaços em branco.
 - Não pode estar na lista de senhas proibidas/comuns ("123456", "password", "qwerty", etc.).
 
-## Resultado esperado:
+## Estrutura do Projeto
 
-- Se todas as regras forem cumpridas → (True, "Senha válida")
-- Caso contrário → (False, "Mensagem de erro correspondente")
+ValidadorDeSenhas_VA01/
+│
+├── src/ # Código-fonte do validador
+│ └── validador.py
+│
+├── testes/ # Testes unitários
+│ └── test_validador.py
+│
+├── .coverage # Relatório de cobertura de testes
+└── README.md
+
+bash
+Copiar código
+
+## Como Executar a Aplicação
+
+1. Clone o repositório:
+git clone https://github.com/LcamposF/ValidadorDeSenhas_VA01.git
+
+2. Entre na pasta do projeto: cd ValidadorDeSenhas_VA01
+
+3. Execute o validador: python src/validador.py
 
 
-##  Resultados dos Testes
+## Como Executar os Testes
 
-A cobertura de testes foi obtida com pytest-cov.
+O projeto utiliza pytest para testes unitários. Para rodar os testes:
 
-<img width="1563" height="865" alt="image" src="https://github.com/user-attachments/assets/6abce288-229c-462e-b2d7-bfb852ad45da" />
+1. Instale o pytest:
+pip install pytest
 
-✅ Todos os testes passaram.
-✅ Cobertura do código: 100%
+2. Execute os testes:
+python -m pytest testes --cov=src --cov-report=term-missing -v
 
-Se todas as regras forem cumpridas → (True, "Senha válida")
-
-Caso contrário → (False, "Mensagem de erro correspondente")
